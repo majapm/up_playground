@@ -4,7 +4,7 @@ int main()
 {
 
     int n, countMax=0, sumMax=0, countCurr=0, sumCurr=0;
-    cin>>n;
+    cin>>n; 
 
     for(int i=0;i<n;++i)
     {
