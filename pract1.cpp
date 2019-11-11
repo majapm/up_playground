@@ -4,7 +4,7 @@ int main()
 {
 
     int n, countMax=0, sumMax=0, countCurr=0, sumCurr=0;
-    cin>>n; 
+    cin>>n;
 
     for(int i=0;i<n;++i)
     {
@@ -14,16 +14,23 @@ int main()
         {
             countCurr++;
             sumCurr+=a;
+            if(countCurr>countMax)
+            {
+                countMax=countCurr;
+                sumMax=sumCurr;
+            }
         }
         else
         {
-            if(countCurr>countMax)
+            /*if(countCurr>countMax)
             {
                 countMax=countCurr;
                 countCurr=0;
                 sumMax=sumCurr;
                 sumCurr=0;
-            }
+            }*/
+            countCurr=0;
+            sumCurr=0;
         }
     }
     cout<<sumMax<<endl;
